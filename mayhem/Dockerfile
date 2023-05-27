@@ -12,7 +12,7 @@ WORKDIR /mayhem/Auto-GPT
 ## TODO: ADD YOUR BUILD INSTRUCTIONS HERE.
 RUN mkdir build && \
     cd build/ && \
-    cmake .. && \
+    CC=clang CXX=clang++ cmake .. && \
     make
 
 # Package Stage
