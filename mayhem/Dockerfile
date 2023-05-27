@@ -6,8 +6,8 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y cmake clang
 
 ## Add source code to the build stage.
-ADD . /mayhem/Auto-GPT
-WORKDIR /mayhem/Auto-GPT
+ADD . /Auto-GPT
+WORKDIR /Auto-GPT
 
 ## TODO: ADD YOUR BUILD INSTRUCTIONS HERE.
 RUN mkdir build && \
@@ -19,5 +19,5 @@ RUN mkdir build && \
 FROM --platform=linux/amd64 ubuntu:20.04
 
 ## TODO: Change <Path in Builder Stage>
-COPY --from=builder /mayhem/Auto-GPT/build/fuzzme /
+COPY --from=builder /Auto-GPT/build/fuzzme /
 
