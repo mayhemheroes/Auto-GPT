@@ -1,4 +1,4 @@
-project: Auto-GPT
+project: auto-gpt
 target: fuzzme
 
 cmds:
