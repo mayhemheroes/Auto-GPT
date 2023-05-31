@@ -2,4 +2,6 @@ project: auto-gpt
 target: fuzzme
 
 cmds:
-  - cmd: /fuzzme
+  - cmd: /my_target_that_needs_a_specific_extension @@
+    env: {}
+    filepath: /useme.specialextension
