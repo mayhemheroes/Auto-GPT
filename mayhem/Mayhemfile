@@ -1,0 +1,5 @@
+project: auto-gpt
+target: fuzzme
+
+cmds:
+  - cmd: /fuzzme @@
